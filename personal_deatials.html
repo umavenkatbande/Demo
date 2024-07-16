@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <script>
+
+        </script>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+            }
+           .container {
+            border: 1px solid rgb(214, 91, 91);
+            width: 800px;
+            height: 950px;
+            padding-left: 50px;
+            padding-top: 50px;
+            background-color: rgb(243, 175, 184);
+           }
+           label{
+            color:black(53, 61, 37);
+            font-size: 20px;
+            font-family: Bodoni MT Light;
+           }
+           input{
+            color:rgb(23, 230, 47);
+            border-color: rgb(45, 47, 36);
+           }
+           input::placeholder
+           {
+            color:rgb(15, 132, 235);
+           }
+           p{
+            color:brown(205, 127, 127);
+            font-size: 30px;
+            font-family: Imprint MT Shadow Light;
+           }
+           textarea::placeholder{
+            color: rgb(29, 78, 213);
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p><b>Personal Details:</b></p>
+        <label><b>First Name:</b></label>
+        <input type="text" placeholder="Enter your first name"/>
+        <br/>
+        <br/>
+        <label><b>Second Name:</b></label>
+        <input type="text" placeholder="Enter your second name"/>
+        <br/>
+        <br/>
+        <label><b>DOB:</b></label>
+        <input type="date" placeholder="Enter your date of birth"/>
+        <br/>
+        <br/>
+        <label><b>Age:</b></label>
+        <input type="number" placeholder="Enter your age"/>
+        <br/>
+        <br/>
+        <label><b>Father Name:</b></label>
+        <input type="text" placeholder="Enter your father name"/>
+        <br/>
+        <br/>
+        <label><b>Mother Name:</b></label>
+        <input type="text" placeholder="Enter your mother name"/>
+        <br/>
+        <br/>
+        <label><b>Address:</b></label>
+        <textarea placeholder="Enter your address"></textarea>
+        <br/>
+        <br/>
+        <label><b>Gender:</b></label>
+        <input type="radio" name="gender" value="male"/>
+        <label>Male</label>
+        <input type="radio" name="gender" value="female"/>
+        <label>Female</label>
+        <input type="radio" name="gender" value="other"/>
+        <label>Other</label>
+        <br/>
+        <br/>
+        <label><b>Certifications:</b></label>
+        <input type="text" placeholder="Enter your certification details"/>
+        <br/>
+        <br/>
+        <p><b>Academic details:</b></p>
+        <table border="1px">
+            <tr>
+                <th><b>N.I</b></th>
+                <th><b>Year Of Passing</b></th>
+                <th><b>Percentage</b></th>
+                <th><b>Place</b></th>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="SSC"/></td>
+                <td><input type="number" placeholder=""/></td>
+                <td><input type="number" placeholder=""/></td>
+                <td><input type="text" placeholder=""/></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="INTER"/></td>
+                <td><input type="number" placeholder=""/></td>
+                <td><input type="number" placeholder=""/></td>
+                <td><input type="text" placeholder=""/></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="B.tech"/></td>
+                <td><input type="number" placeholder=""/></td>
+                <td><input type="number" placeholder=""/></td>
+                <td><input type="text" placeholder=""/></td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <label><b>Skills:</b></label>
+        <input type="text" placeholder="Enter your skills"/>
+        <br/>
+        <br/>
+        <label><b>Hobbies:</b></label>
+        <input type="text" placeholder="Enter your hobbies"/>
+        <br/>
+        <br/>
+        <label><b>Profile Pic:</b></label>
+        <input type="file" accept="image/*"/>
+        <br/>
+        <br/>
+        <label><b>Badges:</b></label>
+        <input type="text" placeholder="Enter your badges"/>
+        <br/>
+        <br/>
+        <label><b>Description:</b></label>
+        <textarea placeholder="Enter your description"></textarea>
+        <br/>
+        <br/>
+        <input type="submit" value="Submit"/>
+    </div>
+    </body>
+</html>

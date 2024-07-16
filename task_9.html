@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            gap: 10px;
+        }
+        .optionContainer {
+            width: 0px;
+            height: 200px;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color:black  ;
+            color: white;
+            padding: 5px;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 1s;
+        }
+        .options {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .options:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.01);
+        }
+        button {
+            width: 180px;
+            height: 30px;
+            font-size: 15px;
+            border: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            position: absolute;
+        }
+        button:hover {
+            background-color: transparent;
+            border: 2px solid black;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="optionContainer">
+        <div class="options">Home</div>
+        <div class="options">Contact</div>
+        <div class="options">Teams</div>
+        <div class="options">Support</div>
+        <div class="options">About</div>
+    </div>
+
+    <button onclick="fun('optionContainer')">Click to display</button>
+
+    <script>
+        function fun(data) {
+            var x = document.getElementsByClassName(data)[0];
+            x.style.visibility = "visible";
+            x.style.width = "180px";
+            var y = document.getElementsByTagName("button")[0];
+            y.style.transform = "translateX(200px)";
+        }
+    </script>
+</body>
+</html>
